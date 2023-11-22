@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Framing Tool</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <input type="file" id="imageInput">
+  <button id="cropButton" style="display: none;">Crop</button>
+
+  <div id="imageContainer">
+    <img id="outputImage">
+  </div>
+
+  <div id="frameSelectors">
+    <!-- Buttons for selecting frames -->
+    <button class="frameOption" onclick="applyFrame('assets/user_image_frame_1.png')">
+      <img src="assets/user_image_frame_1.png" alt="Frame 1">
+    </button>
+    <button class="frameOption" onclick="applyFrame('assets/user_image_frame_2.png')">
+      <img src="assets/user_image_frame_2.png" alt="Frame 2">
+    </button>
+    <button class="frameOption" onclick="applyFrame('assets/user_image_frame_3.png')">
+        <img src="assets/user_image_frame_3.png" alt="Frame 1">
+      </button>
+      <button class="frameOption" onclick="applyFrame('assets/user_image_frame_4.png')">
+        <img src="assets/user_image_frame_4.png" alt="Frame 2">
+      </button>
+    <!-- Add more frame options as needed -->
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
